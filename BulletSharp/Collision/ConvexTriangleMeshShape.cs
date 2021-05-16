@@ -14,7 +14,7 @@ namespace BulletSharp
 			MeshInterface = meshInterface;
 		}
 
-		public void CalculatePrincipalAxisTransform(Matrix principal, out Vector3 inertia,
+		public void CalculatePrincipalAxisTransform(ref Matrix principal, out Vector3 inertia,
 			out float volume)
 		{
 			btConvexTriangleMeshShape_calculatePrincipalAxisTransform(Native, ref principal,
